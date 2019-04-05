@@ -1,0 +1,18 @@
+[user]
+	name = Mike Guida
+	email = mike@mguida.com
+[core]
+	editor = vim
+	excludesfile = ~/.gitignore
+[push]
+	default = simple
+[merge]
+	tool = p4merge
+[gpg]
+	program = gpg
+[commit]
+	gpgsign = true
+[alias]
+	lol = log --graph --decorate --pretty=oneline --abbrev-commit
+	lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+	l = log --color --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
