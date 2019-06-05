@@ -1,6 +1,5 @@
-# -----------------------------------------------
-# Terminal Setup
-# -----------------------------------------------
+# -------- TERMINAL OPTIONS -------
+
 umask 022
 
 HISTFILE=~/.zsh_history
@@ -15,9 +14,7 @@ CLICOLOR=yes
 EDITOR='vim'
 export EDITOR COLORTERM HISTFILE HISTSIZE SAVEHIST CLICOLOR
 
-# -----------------------------------------------
-# aliases
-# -----------------------------------------------
+# -------- ALIAS --------
 alias starwars='telnet towel.blinkenlights.nl'
 alias gln='git log --graph --decorate --all'
 alias git-log-search='git log --pretty=format:"%an - %s" | ack'
@@ -25,7 +22,8 @@ alias git-diff-search='git diff | grep -C 2'
 alias svenv='source venv/bin/activate'
 alias grep='grep --color'
 alias cls='clear'
-alias ls='ls -FG'
+alias ls='lsd'
+# alias ls='ls -FG'
 
 # -----------------------------------------------
 # zgen
@@ -76,13 +74,16 @@ prompt_chpwd() {
 add-zsh-hook chpwd prompt_chpwd
 
 # -----------------------------------------------
-# nice login
+# env overrides
+# -----------------------------------------------
+export LESS=-RXFEm
+
+# -----------------------------------------------
+# nice login stuff
 # -----------------------------------------------
 echo "\nWelcome ${USER}"
 
-# -----------------------------------------------
-# load scripts
-# -----------------------------------------------
+# load nvm
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
