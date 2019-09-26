@@ -6,9 +6,8 @@
   "editor.fontLigatures": true,
   "editor.fontSize": 15,
   "editor.fontWeight": "400",
-  "editor.formatOnSave": true,
   "editor.glyphMargin": false,
-  "editor.minimap.enabled": true,
+  "editor.minimap.enabled": false,
   "editor.multiCursorModifier": "ctrlCmd",
   "editor.renderWhitespace": "all",
   "editor.rulers": [80],
@@ -39,5 +38,23 @@
   "workbench.colorTheme": "17",
   "workbench.editor.enablePreview": false,
   "workbench.iconTheme": "material-icon-theme",
-  "workbench.statusBar.feedback.visible": false
+  "workbench.statusBar.feedback.visible": false,
+  "material-icon-theme.activeIconPack": "react_redux",
+  "cSpell.userWords": [
+    "AUXPARTY",
+    "backoff",
+    "esnext",
+    "guida",
+    "luxon",
+    "mguida",
+    "postgres",
+    "promisify",
+    "signups",
+    "soundservice",
+    "stringz",
+    "typeorm",
+    "uuidv",
+    "waitlist"
+  ],
+  "editor.formatOnSave": true
 }
