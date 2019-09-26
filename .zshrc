@@ -24,6 +24,9 @@ alias grep='grep --color'
 alias cls='clear'
 alias ls='lsd'
 # alias ls='ls -FG'
+alias cp='cp -rv'
+alias mv='mv -v'
+alias mkdir='mkdir -pv'
 
 # -----------------------------------------------
 # zgen
@@ -85,5 +88,8 @@ echo "\nWelcome ${USER}"
 
 # load nvm
 export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" 
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+
+# heroku autocomplete setup
+HEROKU_AC_ZSH_SETUP_PATH=/Users/mike/Library/Caches/heroku/autocomplete/zsh_setup && test -f $HEROKU_AC_ZSH_SETUP_PATH && source $HEROKU_AC_ZSH_SETUP_PATH;
