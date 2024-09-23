@@ -4,5 +4,15 @@
     "key": "cmd+m",
     "command": "editor.action.toggleMinimap",
     "when": "editorTextFocus"
+  },
+  {
+    "key": "space r",
+    "command": "editor.action.rename",
+    "when": "editorTextFocus && vim.mode == 'Normal'"
+  },
+  {
+    "key": "space u",
+    "command": "editor.action.referenceSearch.trigger",
+    "when": "editorTextFocus && vim.mode == 'Normal'"
   }
 ]
